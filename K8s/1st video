@@ -1,0 +1,24 @@
+K8s
+k8s Architecture
+Master Node and Worker node components
+Master node setup - ec2 instance min 2GB 4core required.
+   *install docker
+   *k8s components
+   in master node setup  we need engines to control worker nodes
+   1- minikube
+   2- kubeadm
+   3- kops
+        in above 3 engines we need only 1 engine to setup in master node to control worker nodes.
+worker node 1
+    *docker 
+    *k8s worker node components
+worker node 2
+    *docker 
+    *k8s worker node components
+
+K8s setup for prctice with minimum requirements.
+    Worker node :
+        t2.medium with 2GB RAM 2-core cpu  required ubuntu server.
+        commands: to install kubeadm follow the documents
+Important : to create the worker nodes we can use the AMI of the master node which is a less tedious process.
+ kubeadm init ----- used for making the instance master.
